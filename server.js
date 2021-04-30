@@ -7,7 +7,8 @@ const app = express();
 
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
-
+app.engine('handlebars', hbs.engine);
+app.set('view engine', 'handlebars');
 
 
 app.use((req, res) => {
