@@ -11,15 +11,15 @@ const PORT = process.env.PORT || 3001;
 // App creation
 const app = express();
 
-// App parsing
+// Parsing
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-// App passport
+// Passport
 app.use(passport.initialize());
 app.use(passport.session());
 
-// App handlebars
+// Handlebars
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
 
