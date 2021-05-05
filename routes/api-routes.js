@@ -3,7 +3,7 @@ const passport = require('passport');
 
 module.exports = function(app) {
 
-    app.get('/add-recipe', function(req, res) {
+    app.get('/categories', function(req, res) {
         res.render('');
     });
 
