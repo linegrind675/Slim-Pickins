@@ -3,13 +3,28 @@ const mysql = require('mysql2');
 const Handlebars = require('handlebars');
 const exphbs = require('express-handlebars')
 const hbs = exphbs.create({});
+const passport = require('passport');
 
+// Server port
 const PORT = process.env.PORT || 3001;
+
+// App creation
 const app = express();
 
-app.use(express.urlencoded({ extended: false }));
+// Parsing
+app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+<<<<<<< HEAD
 // app.engine('handlebars', hbs.engine);
+=======
+
+// Passport
+app.use(passport.initialize());
+app.use(passport.session());
+
+// Handlebars
+app.engine('handlebars', hbs.engine);
+>>>>>>> 5d0998cc02fc46d862c2702871458f00ccde23b9
 app.set('view engine', 'handlebars');
 
 
