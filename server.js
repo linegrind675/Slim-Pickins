@@ -17,7 +17,7 @@ app.engine('handlebars', exphbs({
     layoutsDir: __dirname + '/views/layouts',
     }));
 
-//app.use(express.static('public'))
+app.use(express.static('public'))
 // var template = Handlebars.compile("./views/layouts/homepage.handlebars")
 // console.log(template)
 
