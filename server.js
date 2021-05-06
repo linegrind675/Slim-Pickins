@@ -17,6 +17,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static("public"));
 
+
 // Passport
 //app.use(require('serve-static')(__dirname + 'public'));
 //app.use(require('cookie-parser')());
