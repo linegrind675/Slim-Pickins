@@ -1,3 +1,35 @@
 body {
     margin: 0;
 }
+
+img {
+    width: 25%;
+}
+
+footer{
+    position: center;
+}
+
+carousel-slide{
+    position: right;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: coral;
+    justify-content: space-between;
+    padding: 0 1%;
+}
+
+.btn-no-style {
+    font-size: 50px;
+    font-weight: bold;
+    
+}
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1%;
+}
