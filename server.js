@@ -16,6 +16,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 // app.engine('handlebars', hbs.engine);
 
+
 // Passport
 app.use(passport.initialize());
 app.use(passport.session());
@@ -29,9 +30,6 @@ app.engine('handlebars', exphbs({
     layoutsDir: __dirname + '/views/layouts',
     }));
 
-//app.use(express.static('public'))
-// var template = Handlebars.compile("./views/layouts/homepage.handlebars")
-// console.log(template)
 
 
 app.get('/', (req, res) => {
