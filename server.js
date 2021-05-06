@@ -14,9 +14,7 @@ const app = express();
 // Parsing
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-<<<<<<< HEAD
 // app.engine('handlebars', hbs.engine);
-=======
 
 // Passport
 app.use(passport.initialize());
@@ -24,7 +22,6 @@ app.use(passport.session());
 
 // Handlebars
 app.engine('handlebars', hbs.engine);
->>>>>>> 5d0998cc02fc46d862c2702871458f00ccde23b9
 app.set('view engine', 'handlebars');
 
 
