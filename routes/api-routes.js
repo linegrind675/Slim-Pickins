@@ -3,19 +3,19 @@ const passport = require('passport');
 
 module.exports = function(app) {
 
-    app.get('/categories', function(req, res) {
+    app.get('/api/homepage', function(req, res) {
         res.render('');
     });
 
-    app.get('/add-ingredient', function(req, res) {
+    app.get('/api/add-ingredient', function(req, res) {
         res.render('');
     });
 
-    app.get('/', function(req, res) {
+    app.get('/login', function(req, res) {
         res.render('index');
     });
 
-    app.get('/view-recipe', function(req, res) {
+    app.get('/api/view-recipe', function(req, res) {
         db.Recipe
         .findAll({})
         
