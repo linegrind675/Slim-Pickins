@@ -17,6 +17,13 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 
+
+app.use(express.static("public"));
+
+
+
+
+
 // Passport
 //app.use(require('serve-static')(__dirname + 'public'));
 //app.use(require('cookie-parser')());
@@ -37,7 +44,7 @@ app.engine('handlebars', exphbs({
     layoutsDir: __dirname + '/views/layouts',
     }));
 
-//app.use(express.static('public'))
+app.use(express.static('public'))
 // var template = Handlebars.compile("./views/layouts/homepage.handlebars")
 // console.log(template)
 app.get('/recipe', (req, res) => {
