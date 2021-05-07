@@ -4,9 +4,18 @@
 
 }
 
+.title {
+    color: black;
+}
+
 html,body{
     height: 100%;
 }
+
+.Login{
+    color: black;
+}
+
 
 #bottom{
     min-height:100%
@@ -19,8 +28,8 @@ html,body{
 }
 
 .btn-group{
-    padding-bottom: 100px;
-    padding-top: 100px;
+    padding-bottom: 25px;
+    padding-top: 25px;
 }
 .link{
     color: white;
@@ -35,4 +44,39 @@ html,body{
 
 #footer-text{
     color:black;
+}
+
+
+ header {
+    display: flex;
+    align-items: center;
+    background-color: coral;
+    justify-content: space-between;
+    padding: 0 1%;
+} 
+
+.btn-no-style {
+    font-size: 50px;
+    font-weight: bold;
+    
+} 
+
+.recipeofthemonth{
+    background-image: url("../views/images/best-chocolate-chip-cookie-recipe-ever-no-chilling-683x1024.jpeg");
+    background-position: center;
+    padding: 100px 50px;
+    background-size: 400px;
+    background-repeat: no-repeat;
+} 
+
+
+.cookie{
+    padding: 50px;
+    width: 500px;
+    height: 500px;
+}
+
+.ROTM{
+    color: black;
+    text-align: center;
 }
