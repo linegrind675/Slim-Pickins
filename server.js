@@ -15,11 +15,11 @@ const app = express();
 // Parsing
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-<<<<<<< HEAD
+
 // app.engine('handlebars', hbs.engine);
-=======
+
 app.use(express.static("public"));
->>>>>>> af0c3abd6c48189166b623627779d0d661c2d98e
+
 
 
 // Passport

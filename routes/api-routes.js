@@ -4,10 +4,42 @@ const passport = require('passport');
 module.exports = function(app) {
 
     app.get('/categories', function(req, res) {
+        let results = categories;
+    if (req.query) {
+        results = filterByQuery(req.query, results);
+    }
+    res.json(results);
+    });
+
+    app.get('/burgers', function(req, res) {
         res.render('');
     });
 
-    app.get('/add-ingredient', function(req, res) {
+    app.get('/sandwiches', function(req, res) {
+        res.render('');
+    });
+
+    app.get('/breakfast', function(req, res) {
+        res.render('');
+    });
+
+    app.get('/salad', function(req, res) {
+        res.render('');
+    });
+
+    app.get('/soups', function(req, res) {
+        res.render('');
+    });
+
+    app.get('/desserts', function(req, res) {
+        res.render('');
+    });
+
+    app.get('/pasta', function(req, res) {
+        res.render('');
+    });
+
+    app.get('/pizza', function(req, res) {
         res.render('');
     });
 
