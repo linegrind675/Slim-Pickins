@@ -4,22 +4,20 @@ const Handlebars = require('handlebars');
 const exphbs = require('express-handlebars')
 const hbs = exphbs.create({});
 const passport = require('passport');
-//const sequelize = require('./config/connection');
+const sequelize = require('./config/connection');
 
 // Server port
-const PORT = process.env.PORT || 3001;
-
-// App creation
 const app = express();
+const PORT = process.env.PORT || 3001;
 
 // Parsing
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 
-
+//directory
 app.use(express.static("public"));
-
+app.use(routes);
 
 
 
@@ -69,6 +67,11 @@ app.post('/login',
     res.redirect('/');
 });
 
-app.listen(PORT, () => {
-    console.log(`Server running on port ${PORT}`);
-});
+// app.listen(PORT, () => {
+    // console.log(`Server running on port ${PORT}`);
+// });
+sequelize.sync({ force: false }).then(() => {
+    app.listen(PORT, function() {
+      console.log('App listening on PORT ' + PORT);
+    });
+  });
