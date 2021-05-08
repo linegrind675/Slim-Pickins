@@ -30,12 +30,14 @@ html,body{
 .btn-group{
     padding-bottom: 25px;
     padding-top: 25px;
+    padding-left: 45px;
+    padding-right: 25px;
 }
 .link{
     color: white;
 }
 #footer{
-    background-color:gray;
+    background-color:#6f4e37;
     text-align: center;
     height: 195px;
     margin-top: -100px;
@@ -50,7 +52,7 @@ html,body{
  header {
     display: flex;
     align-items: center;
-    background-color: coral;
+    background-color:#6f4e37;
     justify-content: space-between;
     padding: 0 1%;
 } 
@@ -79,4 +81,8 @@ html,body{
 .ROTM{
     color: black;
     text-align: center;
+}
+
+#icon{
+    text-indent: 50px;
 }
