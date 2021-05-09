@@ -2,6 +2,8 @@
 
 Slim-Pickins is a web application used to deliver recipes for you when you dont know what to make but something sounds appealing in a predetermined category.
 
+*** we ran into scheduling issues and errors and have scrambled to make the best of this project as possible. we know there are a lot of issues and have been trying tirelessly to fix them***
+
 ## Installation
 
 

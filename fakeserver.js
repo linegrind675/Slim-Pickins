@@ -1,25 +1,32 @@
-// Dependencies
 const express = require('express');
-const sequelize = require('./config/connection');
+const mysql = require('mysql');
 
-// Sets up the Express App
-const app = express();
-const PORT = process.env.PORT || 3001;
+//create connection
+const db = mysql.createConnection({
 
-// Sets up the Express app to handle data parsing
-app.use(express.urlencoded({ extended: true }));
-app.use(express.json());
+});
 
-// Static directory
-app.use(express.static('public'));
+//connect
+db.connect((err) => {
+    if(err){
+      throw err;
+    }
+    console.log('MySql Connected...');
+});
 
-// Routes
-app.use(require('./routes/api-routes'));
-app.use(require('./routes/user-routes'));
+const app =express();
 
-// Starts the server to begin listening
-sequelize.sync({ force: false }).then(() => {
-  app.listen(PORT, function() {
-    console.log('App listening on PORT ' + PORT);
+//create DB
+app.get('/createdb', (req, res) => {
+  let sql = 'CREATE DATABASE nodemysql';
+  db.query(sql, (err,result) => {
+    if(err) throw err;
+    console.log(result);
+    res.send('Database created...');
   });
 });
+
+app.listen('3000', () => {
+  console.log('server started on port 3000');
+});
+
