@@ -1,7 +1,6 @@
 const db = require('../models');
 const passport = require('passport');
 
-module.exports = function(app) {
 
     app.get('/categories', function(req, res) {
         let results = categories;
@@ -106,4 +105,6 @@ module.exports = function(app) {
         })
     })
 
+    
+    module.exports = function(app) {
 }
