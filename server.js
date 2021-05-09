@@ -15,16 +15,13 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 
-<<<<<<< HEAD
 // app.engine('handlebars', hbs.engine);
 
 app.use(express.static("public"));
 
-=======
 //directory
 // app.use(express.static("public"));
-app.use(routes);
->>>>>>> main
+// app.use(routes);
 
 
 
