@@ -39,7 +39,10 @@ sequelize.sync({ force: false }).then(() => {
 ```
 
 ## Contributors
-
+David Sanchez
+Jonah Callister
+Nate Hogan
+Mckerry Wimberly II
 
 
 
