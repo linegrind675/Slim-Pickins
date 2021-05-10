@@ -3,7 +3,6 @@ const db = require('../models');
 const passport = require('passport');
 const LocalStrategy = require('passport-local');
 
-module.exports = function(app) {
 
     app.get('/users/login', function(req, res) {
         res.render()
@@ -38,4 +37,6 @@ module.exports = function(app) {
             }
         });
     });
+
+    module.exports = function(app) {
 }
