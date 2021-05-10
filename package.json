@@ -1,10 +1,19 @@
 {
   "name": "slim-pickins",
   "version": "1.0.0",
-  "description": "An application where the user can select any ingredients they want, and the app will generate recipes for those ingredients.",
+  "description": "server for using Slim Pickins",
   "main": "server.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "handlebars": "^4.7.7",
+    "mysql": "^2.18.1",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "sequelize": "^6.6.2"
+  },
+  "devDependencies": {},
   "scripts": {
-    "test": "jest",
+    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
   "repository": {
@@ -16,6 +25,7 @@
   "bugs": {
     "url": "https://github.com/linegrind675/Slim-Pickins/issues"
   },
+  "homepage": "https://github.com/linegrind675/Slim-Pickins#readme"
   "homepage": "https://github.com/linegrind675/Slim-Pickins#readme",
   "dependencies": {
     "bcrypt": "^5.0.1",
