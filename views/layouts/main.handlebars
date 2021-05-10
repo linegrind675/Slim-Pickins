@@ -22,7 +22,7 @@
         <div class="wrapper">
         <header>
         <h1>
-          <a class="title" href="/">Slim Pickins</a>
+          <a class="title" href="/">Slim Pickins <i class="fas fa-utensils"></i></a>
         </h1>
           <nav>
             {{#if loggedIn}}
@@ -34,7 +34,27 @@
             </div>
            <button id="logout" class="btn-no-style">logout</button>
             {{else}}
-            <a class="Login" href="/login">LOGIN</a>
+
+                    <!-- {{! dropdown menu with categories}} -->
+<div class="btn-group">
+    <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="position: right;">
+      CATEGORIES
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <ul>
+            <li><a href="3rd Party API Link 1">Burgers</a></li>
+            <li><a href="3rd Party API Link 2">Sandwiches</a></li>
+            <li><a href="3rd Party API Link 3">Breakfast</a></li>
+            <li><a href="3rd Party API Link 4">Salad</a></li>
+            <li><a href="3rd Party API Link 5">Soups</a></li>
+            <li><a href="3rd Party API Link 6">Desserts</a></li>
+            <li><a href="3rd Party API Link 7">Pasta</a></li>
+            <li><a href="3rd Party API Link 8">Pizza</a></li>
+        </ul>
+    </div>
+    &nbsp;&nbsp;
+  </div>
+            <a class="Login" href="/login">LOGIN &nbsp;<i class="fas fa-user" class="icon"></i></a>
           {{/if}}
           </nav>
         </header>
@@ -43,6 +63,27 @@
         </main>
       </div>
     </div>
+
+
+
+
+{{!-- 
+    <section class="ingredients"> --}}
+      {{!-- <div class="container">
+        <h4>Favorite Ingredits</h4>
+        <ol>
+          <li>Paprika</li>  
+          <li>Butter</li>  
+          <li>Pepper</li>
+          <li>Goya Seasoning</li> 
+          <li>Sofrito</li>  
+          <li>Rosemary</li> 
+          <li>Thyne</li>  
+          <li>Salt</li>  
+          <li>All Purpose Steak Seasoning</li>         
+        </ol>
+      </div>
+    </section> --}}
 
       <footer id="footer">
           <h4 id="footer-text"> SLIM PICKENS BROUGHT TO YOU BY </h4> 
