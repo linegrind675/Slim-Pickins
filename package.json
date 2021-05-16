@@ -1,6 +1,9 @@
 {
   "name": "slim-pickins",
   "version": "1.0.0",
+  "engines": {
+    "node": "14.x"
+  },
   "description": "server for using Slim Pickins",
   "main": "server.js",
   "dependencies": {
