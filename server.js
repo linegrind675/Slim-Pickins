@@ -1,5 +1,5 @@
 const express = require('express');
-const mysql = require('mysql2');
+const mysql = require('mysql');
 const Handlebars = require('handlebars');
 const exphbs = require('express-handlebars')
 const hbs = exphbs.create({});

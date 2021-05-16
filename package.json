@@ -25,8 +25,8 @@
   "bugs": {
     "url": "https://github.com/linegrind675/Slim-Pickins/issues"
   },
-  "homepage": "https://github.com/linegrind675/Slim-Pickins#readme"
-  "homepage": "https://github.com/linegrind675/Slim-Pickins#readme",
+  
+  
   "dependencies": {
     "bcrypt": "^5.0.1",
     "connect-session-sequelize": "^7.1.1",

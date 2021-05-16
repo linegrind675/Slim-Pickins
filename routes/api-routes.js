@@ -13,51 +13,6 @@ app.get('/categories', function (req, res) {
     res.json(results);
 });
 
-app.get('/burgers', function (req, res) {
-    res.render('');
-});
-
-app.get('/sandwiches', function (req, res) {
-    res.render('');
-});
-
-app.get('/breakfast', function (req, res) {
-    res.render('');
-});
-
-app.get('/salad', function (req, res) {
-    res.render('');
-});
-
-app.get('/soups', function (req, res) {
-    res.render('');
-});
-
-app.get('/desserts', function (req, res) {
-    res.render('');
-});
-
-app.get('/pasta', function (req, res) {
-    res.render('');
-});
-
-app.get('/pizza', function (req, res) {
-    res.render('');
-});
-
-app.get('/login', function (req, res) {
-    res.render('index');
-});
-
-app.get('/api/view-recipe', function (req, res) {
-    db.Recipe
-        .findAll({})
-
-    res.render('');
-
-
-});
-
 app.get('/api/user/:user_name', function (req, res) {
     let username = req.params.user_name
 
